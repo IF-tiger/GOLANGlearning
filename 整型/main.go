@@ -16,4 +16,9 @@ func main() {
 	//十六进制----0~F // 一般用 0x + 0~f的数
 	a3 := 0xeeee
 	fmt.Printf("%d\n", a3)
+	//查看变量的类型
+	fmt.Printf("%T\n", a3)
+	//声明int8类型,必须加具体的int()的类型,否则默认就是int类型。
+	a4 := int8(9)
+	fmt.Printf("%T\n", a4)
 }
