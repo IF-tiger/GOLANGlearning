@@ -18,7 +18,7 @@ func main() {
 	fmt.Printf("%d\n", a3)
 	//查看变量的类型
 	fmt.Printf("%T\n", a3)
-	//声明int8类型,必须加具体的int()的类型,否则默认就是int类型。
+	//声明int8类型,必须加具体的int()的类型,否则默认就是int类型。main
 	a4 := int8(9)
 	fmt.Printf("%T\n", a4)
 }
