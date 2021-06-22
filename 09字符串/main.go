@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	//go语言中的字符串是用双引号包裹着的
@@ -30,5 +33,23 @@ func main() {
 	str4 := str2 + str3
 	fmt.Println(str4)
 	fmt.Printf("%s%s", str2, str3)
-
+	str5 := fmt.Sprintf("%s%s", str2, str3)
+	fmt.Println(str5)
+	//分隔
+	ret := strings.Split(path, "\\")
+	fmt.Println(ret)
+	//包含
+	fmt.Println(strings.Contains(str3, "威猛"))
+	fmt.Println(strings.Contains(str3, "真帅"))
+	//前缀
+	fmt.Println(strings.HasPrefix(str4, "tiger"))
+	//后缀
+	fmt.Println(strings.HasSuffix(str4, "真帅"))
+	//第一次出现的下标
+	str6 := "abcdeb"
+	fmt.Println(strings.Index(str6, "b"))
+	//最后一次出现的下标
+	fmt.Println(strings.LastIndex(str6, "b"))
+	//拼接
+	fmt.Println(strings.Join(ret, "+"))
 }
